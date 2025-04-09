@@ -9,7 +9,7 @@ void setup() {
 }
 
 void loop() {
-    uint32_t B = GPIOB->IDR;  
-    uint32_t complementoA2 = (~B) + 1; 
-    GPIOA->BSRR = complementoA2; 
+    uint32_t B = GPIOB->IDR;
+    uint32_t resultado = B + 1; 
+    GPIOA->BSRR = resultado; 
 }
